@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  .contents {
+    height:100vh;
+    display : flex;
+    flex-direction: column
+  }
+  nav {
+    height:100px;
+    background:wheat;
+    display : flex;
+    justify-content : space-around;
+    align-items:center;
+  }
+  .items {
+    display:flex;
+    padding:0;
+  }
+  .items > li {
+    list-style-type: None;
+    margin: 0 20px;
+  }
+  aside {
+    width:300px;
+    height:100%;
+    background:rosybrown;
+  }
+  section {
+    height:100%;
+    flex-grow :1;
+    background : pink;
+  }
+  .main {
+    display:flex;
+    height:100%;
+  }
+  .content {
+    background:rgb(153, 226, 255);
+    padding:30px 0;
+    border:1px solid black;
+    text-align:center;
+  }
+  footer {
+    /* block에서는 margin-top:auto 는 불가능 */
+    margin-top:auto;
+    background-color:wheat;
+    height :100px;
+    width: 100%;
+  }
+  </style>
+</head>
+<body>
+  <div class="contents">
+    <nav>
+      <div><img width=90px height=90px src="img.jpg" alt="아연맨"></div>
+      <ul class="items">
+        <li>main</li>
+        <li>contents1</li>
+        <li>contents2</li>
+        <li>about</li>
+      </ul>
+    </nav>
+    <div class="main">
+      <aside>왼쪽</aside>
+      <section>
+        <div class="content">
+          content 내용 1번입니다.
+        </div>
+        <div class="content">
+          content 내용 2번입니다.
+        </div>
+        <div class="content">
+          content 내용 3번입니다.
+        </div>
+      </section>      
+    </div>
+      <footer>
+      이곳은 푸터입니다.
+      </footer>
+    </div>
+</body>
+</html>
