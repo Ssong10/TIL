@@ -33,14 +33,14 @@ section {
   display: inline-block;
   width: 216px;
   height: 100px;
-  margin-right: 8px;
+  margin-left: 8px;
 }
 
 aside {
   display: inline-block;
   width: 136px;
   height: 100px;
-  margin-left: 0px;
+  margin-right: 0px;
   vertical-align: top;
 }
 
