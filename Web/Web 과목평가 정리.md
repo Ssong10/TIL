@@ -219,3 +219,55 @@ upper-roman : 로마 대문자, lower-roman : 로마 소문자
 
 ## box model
 
+> 기본적으로 div를 사용하여 박스를 만들어 준다.
+>
+> margin = div밖 범위 
+>
+> padding = div안 범위 ( bg적용이 된다.)
+
+>  padding, margin 
+>
+> 한개 - 상하좌우
+>
+> 두개 - 상하 / 좌우
+>
+> 3개 - 상/ 좌우 / 하
+>
+> 4개 - 상 / 우 / 하 / 좌
+
+
+
+### display
+
+> display : block 등 설정을 통하여 보여지는 형태를 설정할 수 있다. 
+
+* block -> 기본적으로 가질 수 있는 영역의 100%를 가진다!
+
+  ```css
+  margin-left:auto;  /* 오른쪽으로 붙어있다 */
+  margin-right : auto;  /* 왼쪽으로 붙어있다 */
+  margin : 0 auto ; /* 가운데에 있다 */
+  ```
+
+* inline 영역
+
+  > `<span>` `<input>` `<a>` `<img>`  등 
+
+  > 기본적으로 컨텐트 영역만큼을 가진다. 줄바꿈이 되지 않음.
+
+  > 내용없이 존재할 수 없고, width나 height 적용되지 않는다.
+
+* inline-block속성
+
+  > block속성 -  width, height 를 가지고
+  >
+  > inline 속성 - 우측 margin이 사라진다.
+
+* none : 해당 공간자체가 0이 되고 표시되지도 않는다.
+
+  > visibility : hidden;  -> 공간은 유지되지만 표시되지 않는다.
+
+
+
+# position
+
