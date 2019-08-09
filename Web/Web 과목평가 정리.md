@@ -280,3 +280,77 @@ upper-roman : 로마 대문자, lower-roman : 로마 소문자
   * 부모의 위치에 따라 바뀌게 된다.
 
 * relative
+
+  * 자기가 원래 있어야 할 위치(static)을 기준으로 이동함
+
+* fixed , sticky
+
+  * 브라우저 위치에 따라 변경
+
+    > fixed는 공간을 차지하지 않아서 header부분이 아래로 겹쳐진다.
+    >
+    > sticky는 맨위 공간을 차지해서 header와 겹치지 않는다.
+
+
+
+## float
+
+* float 는 y축의 공간을 inline 형태로 y축에 겹치게 된다. 
+
+
+
+## background
+
+````html
+.header {
+  background-image : url("images.jpg")
+  height: 500px;
+
+  background-size : cover;
+}
+````
+
+* background-size:  300px 500px  -> width, height 순으로 지정을 해준다.
+
+  > 값 하나만 지정하면 width 지정값으로 된다.
+
+  > background-repeat : no-repeat / repeat 설정을 통해 반복설정을 할수 있다.
+
+* background-size : cover -> 배경이미지 크기의 비율을 고정, 제일 크게 덮고 남는 부분은 짜른다.
+
+* background-size:  contain  -> 배경 이미지 크기의 비율을 고정한다. 
+
+  >  이미지가 보이지 않는 영역이 없도록 조정하고, 반복이 될 수 있다.
+
+
+
+## font 
+
+```html
+.font-1 {
+  font-size:2em;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight:lighter;
+  font-style: italic;
+}
+
+.font-2 {
+  font-size:130%;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+```
+
+* font-size : 폰트 사이즈를 설정해 준다.
+
+  > px, em, rem, % 등을 사용할 수 있다.
+
+* font-family :  폰트의 묶음으로 설정할 수 있다. 
+
+  >  첫번째 폰트가 사용자의 컴퓨터에 없으면 다음 폰트가 적용이 된다.
+
+* font-weight : 폰트 굵기 설정을 할수 있다.
+
+  > lighter, bolder 로 설정 할 수 있다.
+
+* font-style : italic 체로 기울임꼴 설정을 할 수 있다. 
