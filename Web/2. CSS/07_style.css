@@ -23,7 +23,7 @@ div {
 .relative_move {
   position:relative;
   top:30px;
-  left:30px;
+  left:100px;
 }
 
 .fixed {

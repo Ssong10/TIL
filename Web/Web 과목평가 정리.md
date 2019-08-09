@@ -269,5 +269,14 @@ upper-roman : 로마 대문자, lower-roman : 로마 소문자
 
 
 
-# position
+### position
 
+* absolute 는 부모 혹은 조상요소를 기준으로 위치
+
+  * 가까운 조상 중 static이 아닌 요소
+
+  * 부모가 static이면 상위요소를 찾아간다.
+
+  * 부모의 위치에 따라 바뀌게 된다.
+
+* relative
