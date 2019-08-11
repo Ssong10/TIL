@@ -37,7 +37,6 @@ HTTP - Hyper Text Transfer Protocol
 ```python
 # ctrl+shift+p
 # settings - json 
-
 {
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
 

@@ -1,8 +1,36 @@
 # HTML
 
+> Hyper Text Markup Launuage
+>
+> 웹표준 :  ( w3c  : world wide web consortium )
+
+* html 의 기본 구조
+
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- head 요소는 문서제목, 문자 코드와 같은
+        해당문서의 정보를 담고 있으며, 
+        브라우저에 나타나지 않는다.
+        css 선언 혹은 외부 로딩 파일 지정등
+    --!>
+</head> 
+<body>
+
+</body>
+</html>
+```
+
+
+
 ## semantic tag
 
-* ```html
+ ```html
     <header>header</header>
     <nav>Navigation</nav>
     <section>
@@ -17,8 +45,10 @@
     <footer>
       Footer
     </footer>
-  ```
+ ```
 
+> `details`, `figure`, `main`, `mark`, `summary`, `time`
+>
 > 일단은 종류와 역할 만 알아두자
 
 ```html
@@ -74,7 +104,7 @@ upper-roman : 로마 대문자, lower-roman : 로마 소문자
 ## iframe 사진, 영상 태그
 
 ```html
-<iframe width="300px" height="300px" src="링크를 넣어주세요"
+<iframe width="300px" height="300px" src="링크를 넣어주세요"></iframe>
 ```
 
 ## 링크
@@ -113,11 +143,77 @@ upper-roman : 로마 대문자, lower-roman : 로마 소문자
 
 ## form
 
-### 폼 정리가 안됨 html-> 05.form.html참고
+* `<form>` 태그에 액션과 method 를 이용하여 폼 내용을 원하는 방식으로 보낼 수 있다.
 
+* `<label for="name">` 이름 : `</label>` 
 
+  > for 에 특정 id를 가진 input으로 포커싱이 된다. 
 
+* text : text값을 input으로 받을 수 있다.
 
+  ```html
+  <input id="name" type="text" name="name" placeholder="이름을 입력해주세요">
+  ```
+
+  > `name`=input() 값으로 폼 내용이 전송된다.
+  >
+  > `placeholder`  입력칸 창에 나타나 있는 메세지를 설정 할 수 있다.
+
+* date : 날짜를 선택할 수 있는 input입력칸이 나온다. 
+
+* radio : 동일한 name 속성값을 가지고 있는 것 중 에 `하나만` 선택
+
+  ``` html
+  <input type="radio" name="sandwich" value="0" checked>에그 마요
+  <input type="radio" name="sandwich" value="1"> 이탈리안 비엠티
+  ```
+
+  > checked 를 이용해서 선택되어 있는 값을 설정해 줄 수 있다.
+
+* number : 숫자의 범위를 지정해 줄 수 있다.
+
+  ``` html
+  <input type="number" name="size" min="15" max="30" step="15">
+  ```
+
+  > `number` 타입에선 `min` 값과 `max` 값, `step` 을 설정해 줄 수 있다.
+  
+* select + option : dropdown 메뉴를 만들 수 있다.
+
+  ```html
+  <select name="bread">
+        <option value="0">허니 오트밀</option>
+        <option value="1" selected>플랫브래드</option>
+        <option value="2" disabled>하티 이탈리안</option>
+  </select>
+  ```
+
+  > select 태그에 name을 지정하고, option 에 value를 지정한다. 
+  >
+  > option에 selected, disabled 를 사용할 수 있다.
+
+* checkbox
+
+  ```html
+  <input type="checkbox" name="source" value="0"> 토마토 <br>
+  <input type="checkbox" name="source" value="1"> 오이 <br>
+  <input type="checkbox" name="source" value="2"> 할라피뇨 <br>
+  <input type="checkbox" name="source" value="3"> 핫 칠리 <br>
+  <input type="checkbox" name="source" value="4"> 바베큐 <br>
+  ```
+
+  > 여러 개를 선택 할 수 있는 `checkbox`,   `radio`랑 형태는 같지만 선택요소의 갯수가 다르다.
+
+* submit
+
+  ```html
+  	<input type="submit" value="제출합니다">
+  </form>
+  ```
+
+  > submit 버튼을 누르고 해당 폼 데이터를 action 으로 전송 할 수 있다. 
+
+  > value 값을 설정하여 `submit` 버튼의 텍스트를 정할 수 있다. 
 
 # CSS
 
@@ -181,7 +277,37 @@ upper-roman : 로마 대문자, lower-roman : 로마 소문자
 
   > .ancestor 클래스 밑에 있는 `<li>` 모두 바뀐다
 
+* nth-child(n)
 
+* nth-of-type(n)
+
+  ```html
+  <style>
+    #ssafy > p:nth-of-type(2) {
+      color:blue;
+    }
+  </style>
+  <div id="ssafy">
+    <h2>어떻게 선택될까?</h2>
+    <p>첫번째 단락</p>
+    <p>두번째 단락</p>
+  ```
+
+  > 상위요소 > p:nth-of-type(2) {
+  >
+  > ​	설정
+  >
+  > }   ==> 해당 요소 중에서 2번째인 `<p>두번째 단락</p>` 이 변하게 된다.
+  >
+  > 
+  >
+  > 상위요소 > p:nth-child(2) {
+  >
+  > ​	설정
+  >
+  > }   ==> 자식 중에서 2번째인 `<p>첫번째 단락</p>` 이 변하게 된다.
+  >
+  > nth-child(1) ==> 1번째 자식이 h2이므로 변하지 않는다.
 
 ## Unit
 
@@ -305,7 +431,6 @@ upper-roman : 로마 대문자, lower-roman : 로마 소문자
 .header {
   background-image : url("images.jpg")
   height: 500px;
-
   background-size : cover;
 }
 ````
@@ -354,3 +479,107 @@ upper-roman : 로마 대문자, lower-roman : 로마 소문자
   > lighter, bolder 로 설정 할 수 있다.
 
 * font-style : italic 체로 기울임꼴 설정을 할 수 있다. 
+
+
+
+# bootstrap
+
+## spacing 
+
+* mt-1 
+
+  > mt-1 => 0.25rem
+  >
+  > mr-2  => 0.5rem
+  >
+  > ml-3  => 1 rem
+  >
+  > mx-4  => 1.5 rem
+  >
+  > mb-5 => 3rem
+
+* color
+
+  ```
+  dark - 검
+  secondary -회
+  primary - 파
+  warning - 노
+  danger - 빨
+  success - 초
+  info - 청
+  light - 흰
+  ```
+
+* border
+
+  > `border` - > 테두리 설정
+  >
+  > `border-color`  => 색상 설정 가능
+  >
+  > `border-right`  => 테두리 위치설정
+  >
+  > `rounded-circle` => 달걀느낌
+  >
+  > `rounded-pill` => 원형 -> 나머지 직선
+  >
+  > `rounded` => 각진 부분 둥글게
+
+* display
+
+  > `d-inline `: display inline 설정
+  >
+  > `d-block` : display block설정
+
+  > `d-sm(or md)-none` : 사이즈 이상이면 안보이게 하는 설정
+
+* position
+
+  > `fixed-top` : 맨 위에 고정
+  >
+  > `fixed-bottom` : 맨 아래 고정
+  >
+  > `position-relative `
+  >
+  > `position-absolute`
+
+* component
+
+  > `nav` 
+  >
+  > `alert`
+  >
+  > `form`
+  >
+  > `card`
+  >
+  > `modal`
+  >
+  > `pagenation`
+
+* grid 
+
+  ```html
+  <div class="container">
+      <div class="row">
+          <div class="col-4">    
+          </div>
+          <div class="col-4">
+          </div>
+          <div class="col-4">
+          </div>
+      </div> 
+  </div>
+  ```
+
+  * offset 설정을 통해서 띄어줄수 있다.
+
+    ```html
+    <div class="row">
+        <div class="col-2 offset-5">
+            가운데
+        </div>
+    </div>
+    ```
+
+    
