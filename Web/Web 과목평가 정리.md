@@ -217,7 +217,7 @@ upper-roman : 로마 대문자, lower-roman : 로마 소문자
 
 # CSS
 
-### style
+## style
 
 > 내부참조(embed) head 태그 내에 style태그 활용
 
@@ -243,7 +243,7 @@ upper-roman : 로마 대문자, lower-roman : 로마 소문자
 
 
 
-### selector
+## selector
 
 * 인접 선택자 
 
@@ -363,7 +363,7 @@ upper-roman : 로마 대문자, lower-roman : 로마 소문자
 
 
 
-### display
+## display
 
 > display : block 등 설정을 통하여 보여지는 형태를 설정할 수 있다. 
 
@@ -395,7 +395,7 @@ upper-roman : 로마 대문자, lower-roman : 로마 소문자
 
 
 
-### position
+## position
 
 * absolute 는 부모 혹은 조상요소를 기준으로 위치
 
@@ -416,8 +416,6 @@ upper-roman : 로마 대문자, lower-roman : 로마 소문자
     > fixed는 공간을 차지하지 않아서 header부분이 아래로 겹쳐진다.
     >
     > sticky는 맨위 공간을 차지해서 header와 겹치지 않는다.
-
-
 
 ## float
 
@@ -498,7 +496,7 @@ upper-roman : 로마 대문자, lower-roman : 로마 소문자
   >
   > mb-5 => 3rem
 
-* color
+## color
 
   ```
   dark - 검
@@ -511,7 +509,7 @@ upper-roman : 로마 대문자, lower-roman : 로마 소문자
   light - 흰
   ```
 
-* border
+## border
 
   > `border` - > 테두리 설정
   >
@@ -525,7 +523,7 @@ upper-roman : 로마 대문자, lower-roman : 로마 소문자
   >
   > `rounded` => 각진 부분 둥글게
 
-* display
+## display
 
   > `d-inline `: display inline 설정
   >
@@ -533,7 +531,7 @@ upper-roman : 로마 대문자, lower-roman : 로마 소문자
 
   > `d-sm(or md)-none` : 사이즈 이상이면 안보이게 하는 설정
 
-* position
+## position
 
   > `fixed-top` : 맨 위에 고정
   >
@@ -543,7 +541,7 @@ upper-roman : 로마 대문자, lower-roman : 로마 소문자
   >
   > `position-absolute`
 
-* component
+## component
 
   > `nav` 
   >
@@ -557,7 +555,7 @@ upper-roman : 로마 대문자, lower-roman : 로마 소문자
   >
   > `pagenation`
 
-* grid 
+## grid 
 
   ```html
   <div class="container">
@@ -572,14 +570,20 @@ upper-roman : 로마 대문자, lower-roman : 로마 소문자
   </div>
   ```
 
-  * offset 설정을 통해서 띄어줄수 있다.
+## offset 
 
-    ```html
-    <div class="row">
-        <div class="col-2 offset-5">
-            가운데
-        </div>
+```html
+<div class="row">
+    <div class="col-2 offset-5">
+        가운데
     </div>
-    ```
+</div>
+```
 
-    
+## 틀린거
+
+1. box-sizing:border-box
+2. 색상 rgb
+3. form 엔 input만 사용가능
+4. charset="UTF-8"
+5. bootstrap -> text-align-center 가 아니라 text-center
