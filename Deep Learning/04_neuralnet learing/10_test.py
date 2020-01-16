@@ -29,7 +29,7 @@ for i in range(iters_num):
     t_batch = t_train[batch_mask]
     
     # 기울기 계산
-    #grad = network.numerical_gradient(x_batch, t_batch)
+    # grad = network.numerical_gradient(x_batch, t_batch)
     grad = network.gradient(x_batch, t_batch)
     
     # 매개변수 갱신
@@ -47,6 +47,7 @@ for i in range(iters_num):
         train_acc_list.append(train_acc)
         test_acc_list.append(test_acc)
         print("train acc, test acc | " + str(train_acc) + ", " + str(test_acc))
+        print(train_loss_list[-1])
 
 # 그래프 그리기
 markers = {'train': 'o', 'test': 's'}
