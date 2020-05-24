@@ -1,98 +1,101 @@
-# 정보처리기사 목차
+# Computer System
 
-## 데이터베이스
+## 0. 목차
 
-
-
-### 데이터베이스의 개념
-
-* DBMS
-* Schema
-* DDL, DML, DCL
-* DBA
-
-### 관계 데이터베이스 모델과 언어
-
-* 관계형 데이터베이스
-* SQL
-
-### 데이터베이스 고급기능
-
-* 트랙잭션
-* Recovery 
-* concurrency Control
-* Integrity
-* Security
-
-### 자료 구조
-
-* 리스트
-* 스택
-* 큐, 데크(Deque)
-* 트리(Tree)
-* 이진트리
-* 그래프
-* 정렬( 삽입, 선택, 버블)
+* [OS](##OS)
+* [Process](##Process)
+* [HTTP](##HTTP&HTTPS)
+* [BACKEND](##BACKEND)
+* [FRONTEND](##FRONTEND)
+* [기타](##기타)
+* [추가해야될 사항](##add)
 
 
 
-## 전자계산기
+## OS
 
-* 논리게이트
-* 조합논리회로(반가산기, 전가산기)
-* 순서논리회로(플립플롭)
+* Generations Of Programming Languages
+  * [세대별 언어](CS/languages.md)
+* OOP(객체 지향 프로그래밍)
+  * [OOP](CS/OOP.md)
+* 함수형 프로그래밍
+  * [functional programming](CS/functional_programming.md)
 
-#### 프로세서
+## Process
 
-* 중앙처리장치
-* 입출력제어방식
-* 인터럽트
-* 인터럽트 우선순위(Priority)
+* [Process & Thread](CS/process&thread.md)
+* [Multi Process & Multi Thread](CS/multiprocess.md)
 
-## 운영체제
+## HTTP & HTTPS
 
-### 개념
-
-* 운영체제
-* 컴파일러, 인터프리터
-* 어셈블리어와 어셈블러
-
-## 기억장치
-
-* 주기억장치
-* 보조기억장치
-* 캐시메모리
-* 가상기억장치
-
-### 운영체제
-
-* UNIX
-* UBUNTU
+* [HTTP & HTTPS](CS/HTTP.md)
 
 
 
-### 전송제어방식
+## BACKEND
 
-* 데이터링크제어 프로토콜(BSC, HDLC, SDLC)
-* 회선 제어 방식
-* 오류제어방식
-* 오류검출방식
+* Design Fattern
 
-### 데이터 회선망
+  * [MVC](CS/MVC.md)
 
-* 전용회선, 교환회선
-* LAN
-* VAN
-* MAC ( 매체 접근 제어)
-* ISDN
+  * [MVVM](CS/MVVM.md)
 
-### 프로토콜
+* REST
 
-* 통신프로토콜
-* TCP/IP
+  * [REST](CS/REST.md)
+
+  * [RESTful & DRF](CS/REST++.md)
+
+## FRONTEND
+
+* Vue
+  
+  * [Vue](CS/Vue.md)
+  
+* JavaScript
+  
+* [JavaScript](CS/Javascript.md) ( ajax, axios)
+  
+* HTML
+
+  
+
+  
+
+## 기타
+
+* Virtual Memory ( 가상 메모리 )
+  * [가상메모리](CS/VirtualMemory.md) - 정리 필요
+
+* Docker
+  * [Docker](CS/docker.md) - 정리해야댐 VM과의 차이
+
+* 동기 비동기
+  * [sync](CS/sync.md)
+
+* Cache & Redis
+  * [Cache, Redis](CS/Cache&Redis.md)
+
+* TCP&IP (정리 필요)
+  * [TCP&IP](CS/TCP&IP.md)
 
 
 
+## add
 
+DFS , BFS 비교
 
-[REST](CS/Rest.md)
+CORS 와 3가지 요소
+
+JSON
+
+Singleton fattern
+
+kubernetes
+
+python - GC
+
+Node.js
+
+뮤텍스, 세마포어
+
