@@ -16,7 +16,7 @@
 
 ## REST API 설계 예시
 
-![REST API 설계 예시](image/RESTAPI.PNG)
+![REST API 설계 예시](image/RESTAPI.png)
 
 
 

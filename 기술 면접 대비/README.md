@@ -2,13 +2,13 @@
 
 ## 0. 목차
 
-* [OS](##OS)
-* [Process](##Process)
-* [HTTP](##HTTP&HTTPS)
-* [BACKEND](##BACKEND)
-* [FRONTEND](##FRONTEND)
-* [기타](##기타)
-* [추가해야될 사항](##add)
+* [OS](#OS)
+* [Process](#Process)
+* [HTTP](#HTTP&HTTPS)
+* [BACKEND](#BACKEND)
+* [FRONTEND](#FRONTEND)
+* [기타](#기타)
+* [추가해야될 사항](#add)
 
 
 
@@ -43,8 +43,8 @@
 * REST
 
   * [REST](CS/REST.md)
-
-  * [RESTful & DRF](CS/REST++.md)
+* [RESTful & DRF](CS/REST++.md)
+  * [Error_code](CS/error_code.md)
 
 ## FRONTEND
 
@@ -54,13 +54,12 @@
   
 * JavaScript
   
-* [JavaScript](CS/Javascript.md) ( ajax, axios)
+  * [JavaScript](CS/JavaScript.md) ( ajax, axios)
   
 * HTML
 
   
 
-  
 
 ## 기타
 

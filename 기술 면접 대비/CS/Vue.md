@@ -6,7 +6,7 @@
 
 ## Vue Life Cycle
 
-![Vue Life Cycle](image/Vue-life-cycle.PNG)
+![Vue Life Cycle](image/vue-life-cycle.png)
 
 * beforeCreate
   * lifecylce, event, render 초기화 된 후
