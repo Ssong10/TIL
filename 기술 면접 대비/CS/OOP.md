@@ -39,8 +39,6 @@
 
 
 
-
-
 ## OOP의 특성
 
 ### 캡슐화(Encapsulation)
