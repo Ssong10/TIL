@@ -11,7 +11,6 @@
 * [추가해야될 사항](#add)
 
 
-
 ## OS
 
 * Generations Of Programming Languages
@@ -32,6 +31,11 @@
 
 * [HTTP & HTTPS](CS/HTTP.md)
 
+* [protocol](CS/protocol.md) (TCP & IP)
+
+* [CORS](CS/CORS.md)
+
+  
 
 
 ## BACKEND
@@ -70,26 +74,25 @@
 * HTML
 
   
-
-
 ## 기타
 
 * Virtual Memory ( 가상 메모리 )
-  * [가상메모리](CS/VirtualMemory.md) - 정리 필요
-
+  
+* [가상메모리](CS/VirtualMemory.md) - 정리 필요
+  
 * Docker
-  * [Docker](CS/docker.md) - 정리해야댐 VM과의 차이
-
+  
+* [Docker](CS/docker.md) - 정리해야댐 VM과의 차이
+  
 * 동기 비동기
-  * [sync](CS/sync.md)
-
+  
+* [sync](CS/sync.md)
+  
 * Cache & Redis
+  
   * [Cache, Redis](CS/Cache&Redis.md)
-
-* TCP&IP (정리 필요)
-  * [TCP&IP](CS/TCP&IP.md)
-
-
+  
+  
 
 ## add
 

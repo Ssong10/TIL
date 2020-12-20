@@ -77,7 +77,7 @@ axios는 node.js와 브라우저를 위한 http통신 javascript 라이브러리
 
 
 
-
+![callbacktopromist](image/callback-to-promise.png)
 
 ## CallBack function
 
